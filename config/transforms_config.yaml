@@ -1,0 +1,22 @@
+transforms:
+  train:
+    - name: RandomResizedCrop
+      params: { size: 224 }
+    - name: RandomHorizontalFlip
+    - name: AutoAugment
+      params: { policy: IMAGENET }
+    - name: ToTensor
+    - name: Normalize
+      params:
+        mean: [0.485, 0.456, 0.406]
+        std: [0.229, 0.224, 0.225]
+  val:
+    - name: Resize
+      params: { size: 256 }
+    - name: CenterCrop
+      params: { size: 224 }
+    - name: ToTensor
+    - name: Normalize
+      params:
+        mean: [0.485, 0.456, 0.406]
+        std: [0.229, 0.224, 0.225]
