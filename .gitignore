@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-.cursor/*
-.ssh/*
-.vscode/*
-
-hai/test/*
-hai/train/*
-hai/test.csv
-hai/sample_submission.csv
-hai/open.zip
-hai/.gitignore
-=======
 # Created by https://www.toptal.com/developers/gitignore/api/linux,windows,macos,python,jupyternotebooks,visualstudiocode,pycharm,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,windows,macos,python,jupyternotebooks,visualstudiocode,pycharm,vim
 
@@ -432,4 +420,3 @@ outputs/
 *.h5
 *.pt
 .env
->>>>>>> origin/main
