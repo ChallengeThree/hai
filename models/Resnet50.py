@@ -11,7 +11,7 @@ class Resnet50Model(nn.Module):
         self.backbone.fc = nn.Identity()  # feature extractor로만 사용
         self.head = nn.Linear(self.feature_dim, num_classes)  # 분류기
 
-    def forward(self, x):
+    def forward(self, x, labels=None):
         x = self.backbone(x)       
         x = self.head(x) 
         return x

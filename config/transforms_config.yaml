@@ -4,7 +4,7 @@ transforms:
       params: { size: 224 }
     - name: RandomHorizontalFlip
     - name: AutoAugment
-      params: { policy: IMAGENET }
+      params: { policy: custom_imagenet }
     - name: ToTensor
     - name: Normalize
       params:
